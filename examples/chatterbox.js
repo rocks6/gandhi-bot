@@ -66,7 +66,7 @@ bot.on('chat', (username, message) => {
   }
 
   function sayPosition (username) {
-    bot.chat(`I am at ${bot.entity.position}`)
+    bot.chat(`I am at ${bot.entity.position.x}`)
     bot.chat(`You are at ${bot.players[username].entity.position}`)
   }
 
